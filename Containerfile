@@ -5,6 +5,7 @@ FROM ghcr.io/ublue-os/fedora-coreos:stable-nvidia
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh /tmp/build.sh
+COPY build_files /tmp/build_files
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
