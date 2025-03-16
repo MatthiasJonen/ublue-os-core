@@ -6,6 +6,7 @@ FROM ghcr.io/ublue-os/fedora-coreos:stable-nvidia
 
 COPY build.sh /tmp/build.sh
 COPY build_files /tmp/build_files
+COPY system_files /tmp/system_files
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \

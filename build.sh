@@ -20,6 +20,9 @@ dnf5 install -y tmux
 # dnf5 -y copr disable ublue-os/staging
 #
 
+# Copy files to container
+rsync -rvK /tmp/system_files/shared/ /
+
 #### Execute scripts
 
 # This installs (home)brew
