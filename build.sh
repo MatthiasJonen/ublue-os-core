@@ -28,3 +28,5 @@ dnf5 install -y tmux
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+# Automatic updates when new image releases
+systemctl enable rpm-ostreed-automatic.timer
